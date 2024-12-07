@@ -150,6 +150,10 @@ After verifying that everything works as intended and the simulation outputs mat
 
 ## Final Conclusion
 
-As a matter of course, actual CPU schedulers working at the core of every major Operating System have slightly different behavior and much higher complexity compared to the schedulers simulated by this rudimentary program. However, that does not mean the core of them is any different. 
+As a matter of course, actual CPU schedulers working at the core of every major Operating System have slightly different behavior and much higher complexity compared to the schedulers simulated by this rudimentary program. 
 
-This program helps us to understand the core methodology used by modern CPU schedulers working at the heart of Operating System kernels, and also helps us better manage any user-space programs we write as programmers and developers to better take advantage of the modern computing hardware in specific mission-critical applications, or optimize our programs to run better on low-compute-power machines.
+However, that does not mean the core of them is any different. 
+
+This program helps us to understand the core methodology used by modern CPU schedulers working at the heart of Operating System kernels, and also helps us better manage any user-space programs we write as programmers and developers -- to better take advantage of the modern computing hardware in specific mission-critical applications. 
+
+...Or to simply optimize our programs a little more in order to run better on low-computing-power machines.
