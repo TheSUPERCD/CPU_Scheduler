@@ -1,4 +1,5 @@
 #include"./headers/plist.hpp"
+#include <cstring>
 
 
 #define GREEN "\033[1;32m"
@@ -23,12 +24,17 @@ int main(int argc, char **argv){
     plist.SJF_scheduler();
     plist.PRIORITY_scheduler();
 
+    int elements_to_display = 20;
+    if(argc>2){
+        elements_to_display = strcmp(argv[2], "--display-all")==0 ? -1 : elements_to_display;
+    }
+
     std::cout<<"============================= FIFO Scheduler ============================="<<std::endl;
-    plist.display(FIFO, 20);
+    plist.display(FIFO, elements_to_display);
     std::cout<<"=================== SJF Scheduler (Without Preemption) ==================="<<std::endl;
-    plist.display(SJF, 20);
+    plist.display(SJF, elements_to_display);
     std::cout<<"================== PRIORITY Scheduler (With Preemption) =================="<<std::endl;
-    plist.display(PRIO, 20);
+    plist.display(PRIO, elements_to_display);
 
     
 
